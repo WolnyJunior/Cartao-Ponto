@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { calcularDia } from '../src/domain/services/calculoDia.js'
-import { MarcacaoDia } from "../src/domain/entities/marcacaoDia.js";
+import { calcularDia } from '../src/domain/services/calculoDia.service.js'
+import { MarcacaoDia } from "../src/domain/entities/marcacaoDia.entities.js";
 
 
 function criarDiaUtil(alteracoes: Partial<MarcacaoDia> = {}): MarcacaoDia {

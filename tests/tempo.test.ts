@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { converterHoraParaMinuto, formatarMinutoParaHora } from '../src/shared/tempo'
+import { converterHoraParaMinuto, formatarMinutoParaHora } from '../src/shared/tempo.shared'
 
 describe('tempo', () => {
     it('converte hora para minutos', () => {
