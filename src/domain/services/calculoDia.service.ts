@@ -1,7 +1,7 @@
-import type { MarcacaoDia } from "../entities/marcacaoDia.js";
-import type { ResultadoDia } from "../entities/resultadoDia.js";
-import { ehDomingoOuFeriado, obterJornadaPrevistaEmMinutos, LIMITE_HORAS_50_MINUTOS } from "../rules/jornada.js";
-import { converterHoraParaMinuto } from "../../shared/tempo.js";
+import type { MarcacaoDia } from "../entities/marcacaoDia.entities.js";
+import type { ResultadoDia } from "../entities/resultadoDia.entities.js";
+import { ehDomingoOuFeriado, obterJornadaPrevistaEmMinutos, LIMITE_HORAS_50_MINUTOS } from "../rules/jornada.rules.js";
+import { converterHoraParaMinuto } from "../../shared/tempo.shared.js";
 
 function calcularMinutosTrabalhados(marcacao: MarcacaoDia): number {
     const { entrada, saidaIntervalo, voltaIntervalo, saida } = marcacao
